@@ -1,0 +1,275 @@
+atualização apt
+atualização apt
+apt install figlet
+pacote = $ ( dpkg --get-selections | grep " ruby "  ) 
+
+CYAN = " \ 033 [1; 36m "
+AMARELO = " \ 033 [1; 33m "
+PURPLE = " \ 033 [1; 35m "
+VERDE = " \ 033 [1; 32m "
+VERMELHO = ' \ 033 [1; 31m '
+NC = ' \ 033 [0m '
+
+if [ -n  " $ pacote " ] ;  então
+	echo  $ GREEN " [!] Ruby detectado prosseguindo ... "
+	dormir 1
+	pacote = $ ( dpkg --get-selections | grep " lolcat "  ) 
+	if [ -n  " $ pacote " ] ;  então
+		echo  $ GREEN " [!] Lolcat detectado prosseguindo ... "
+		dormir 1
+	outro
+		echo  $ RED " [!] Lolcat não detectado, instalando ... "
+		gem instalar lolcat 
+	fi
+outro
+	echo  $ RED " [!] Ruby não detectado, instalando ... "
+	dormir 1
+	apt instalar ruby 
+	echo  $ YELLOW " [!] Instalando o lolcat ... "
+	gem instalar lolcat 
+fi
+
+Claro
+
+figlet -c -f slant -t ' Briz4lok4 '  | lolcat
+
+echo   " Seja bem-vindo ao menu de bots de whatsapp o que deseja? \ n \ n "  | lolcat -a -d 50
+
+dormir 0,5
+echo  $ CYAN " [1] Instalar Brizas-bot Ultimate "
+dormir 0,5
+echo  $ CYAN " [2] Instalar Nabuto-bot "
+dormir 0,5
+echo  $ CYAN " [3] Instalar Causs-bot "
+dormir 0,5
+echo  $ CYAN " [4] Instalar Kratos-bot "
+dormir 0,5
+echo $CYAN"[5] Instalar MhankBar-bot"
+sleep 0.5
+echo $CYAN"[6] Instalar Arya-bot"
+sleep 0.5
+echo $CYAN"[7] Instalar ferramenta de puxar dados"
+sleep 0.5
+echo $CYAN"[8] Instalar o ngrok"
+sleep 0.5
+echo $CYAN"[9] Instalar rastreador de localização"
+sleep 0.5
+echo $CYAN"[10] Sair"
+echo $PURPLE
+sleep 0.5
+
+read -p "> " opts
+
+if [ $ opts  =  " 1 " ] ;  então
+	Claro
+	echo  $ GREEN
+	echo  " [!] Baixando o bot aguarde ... "  $ NC
+	dormir 3
+	if [ -e  " $ HOME / Brizas-bot " ] ;  então
+		Claro
+		echo  $ YELLOW " O bot já esta instalado no termux, caso queira reinstalar, exclua a pasta do bot com (rm -r -f Brizas-bot) e tente novamente "
+		saída
+	fi
+	CD
+	git clone https://github.com/ianmsfvenom/Brizas-bot > / dev / null 2> / dev / null
+	Claro
+	echo  $ GREEN " [!] Bot baixado com sucesso! Instalando as dependências ... "  $ NC
+	cd Brizas-bot
+	bash install.sh / dev / null 2> / dev / null
+	Claro
+	echo  $ GREEN " [!] BOT INSTALADO COM SUCESSO, CÓPIA E COLE O COMANDO ABAIXO E DPS ESCANEIE O CÓDIGO :) "
+	eco
+	echo  $ YELLOW  " cd .. && cd Brizas-bot && npm start "
+	eco
+	echo  $ NC
+fi
+
+if [ $ opts  =  " 2 " ] ;  então
+	Claro
+	echo  $ GREEN " [!] Baixando o bot aguarde ... "  $ NC
+	dormir 3
+	if [ -e  " $ HOME / w " ] ;  então
+		Claro
+		echo  $ YELLOW " O bot já esta instalado no termux, caso queira reinstalar, exclua a pasta do bot com (rm -r -fw) e tente novamente "
+		saída
+	fi
+	CD
+	git clone https://github.com/glub1/w > / dev / null 2> / dev / null
+	Claro
+	echo  $ GREEN " [!] Bot baixado com sucesso! Instalando as dependências ... "  $ NC
+	cd w
+	pacote de instalação descompactado > / dev / null 2> / dev / null
+	pacote de instalação do nodejs > / dev / null 2> / dev / null
+	pacote de instalação ffmpeg > / dev / null 2> / dev / null
+	pacote de instalação tesseract > / dev / null 2> / dev / null
+	descompacte w.zip > / dev / null 2> / dev / null
+	cd w
+	bash install.sh > / dev / null 2> / dev / null
+	Claro
+	echo  $ GREEN " [!] BOT INSTALADO COM SUCESSO, CÓPIA E COLE O COMANDO ABAIXO E DPS ESCANEIE O CÓDIGO :) "
+	eco
+	echo  $ YELLOW  " cd .. && cd w && cd w && npm start " $ NC
+fi
+if [ $ opts  =  " 3 " ] ;  então
+	Claro
+	echo  $ GREEN " [!] Baixando o bot aguarde ... " $ NC
+	dormir 3
+	if [ -e  " $ HOME / Caussx " ] ;  então
+		Claro
+		echo  $ YELLOW " O bot já esta instalado no termux, caso queira reinstalar, exclua a pasta do bot com (rm -r -f Caussx) e tente novamente "
+		saída
+	fi
+	CD
+	git clone https://github.com/Admcauss-alt/Caussx > / dev / null 2> / dev / null
+	Claro
+	echo  $ GREEN " [!] Bot baixado com sucesso! Instalando as dependências ... " $ NC
+	cd Caussx
+	bash install.sh > / dev / null 2> / dev / null
+	Claro
+	echo  $ GREEN " [!] BOT INSTALADO COM SUCESSO, CÓPIA E COLE O COMANDO ABAIXO E DPS ESCANEIE O CÓDIGO :) "
+	eco
+	echo  $ YELLOW " cd .. && cd Caussx && npm start " $ NC
+fi
+
+if [ $ opts  =  " 4 " ] ;  então
+	Claro
+	echo  $ GREEN " [!] Baixando o bot aguarde ... "  $ NC
+	dormir 3
+	if [ -e  " $ HOME /bot4.0 " ] ;  então
+		Claro
+		echo  $ YELLOW " O bot já esta instalado no termux, caso queira reinstalar, exclua a pasta do bot com (rm -r -f bot4.0) e tente novamente "
+		saída
+	fi
+	CD
+	git clone https://github.com/KRATOSmdzkk23/bot4.0.git > / dev / null 2> / dev / null
+	Claro
+	echo $GREEN"[!]Bot baixado com sucesso! Instalando as dependências..."$NC
+	cd bot4.0
+	bash install.sh > /dev/null 2> /dev/null
+	clear
+	echo $GREEN "[!] BOT INSTALADO COM SUCESSO, COPIE E COLE O COMANDO ABAIXO E DPS ESCANEIE O CÓDIGO :)"
+	echo
+	echo $YELLOW "cd .. && cd bot4.0 && npm start"$NC
+fi
+if [ $opts = "5" ]; then
+	clear
+	echo $GREEN "[!] Baixando o bot aguarde..."$NC
+	sleep 3
+	if [ -e "$HOME/termux-wabot" ]; then
+		clear
+		echo $YELLOW"O bot já esta instalado no termux, caso queira reinstalar, exclua a pasta do bot com (rm -r -f termux-wabot) e tente novamente"
+		exit
+	fi
+	cd
+	git clone https://github.com/MhankBarBar/termux-wabot > /dev/null 2> /dev/null
+	clear
+	echo $GREEN"[!]Bot baixado com sucesso! Instalando as dependências..."$NC
+	cd termux-wabot
+	bash install.sh > /dev/null 2> /dev/null
+	clear
+	echo  $ GREEN  " [!] BOT INSTALADO COM SUCESSO, CÓPIA E COLE O COMANDO ABAIXO E DPS ESCANEIE O CÓDIGO :) "
+	eco
+	echo  $ YELLOW  " cd .. && cd termux-wabot && npm start " $ NC
+fi
+if [ $ opts  =  " 6 " ] ;  então
+	Claro
+	echo  $ GREEN  " [!] Baixando o bot aguarde ... " $ NC
+	dormir 3
+	if [ -e  " $ HOME / Arya-Bot " ] ;  então
+		Claro
+		echo $YELLOW"O bot já esta instalado no termux, caso queira reinstalar, exclua a pasta do bot com (rm -r -f Arya-Bot) e tente novamente"
+		exit
+	fi
+	cd
+	apt install nodejs > /dev/null 2> /dev/null
+	apt install ffmpeg > /dev/null 2> /dev/null
+	apt install imagemagick > /dev/null 2> /dev/null
+	git clone https://github.com/Arya274/Arya-Bot > /dev/null 2> /dev/null
+	clear
+	cd Arya-Bot
+	npm install > /dev/null 2> /dev/null
+	clear
+	echo  $ GREEN " [!] BOT INSTALADO COM SUCESSO, CÓPIA E COLE O COMANDO ABAIXO E DPS ESCANEIE O CÓDIGO :) "
+	eco
+	echo  $ YELLOW  " cd .. && cd Arya-Bot && npm start " $ NC
+fi
+
+if [ $ opts  =  " 7 " ] ;  então
+	Claro
+	echo  $ GREEN  " [!] Instalando a ferramenta aguarde ... " $ NC
+	dormir 3
+	if [ -e  " $ HOME / Kiny-Painel " ] ;  então
+		Claro
+		echo $YELLOW"A ferramenta já esta instalado no termux, caso queira reinstalar, exclua a pasta do bot com (rm -r -f Kiny-Painel) e tente novamente"
+		exit
+	fi
+	cd
+	apt install python > /dev/null 2> /dev/null
+	apt install python2 > /dev/null 2> /dev/null
+	git clone https://github.com/Kiny-Kiny/Kiny-Painel > /dev/null 2> /dev/null
+	clear
+	echo $GREEN "[!] FERRAMENTA INSTALADA COM SUCESSO, COPIE E COLE O COMANDO ABAIXO, O USUARIO E QUALQUER UM E A SENHA É: VirtualInsanity"
+	echo
+	echo  $ YELLOW  " cd .. && Kiny-Painel && python3 main.py " $ NC
+
+fi
+
+if [ $ opts  =  " 8 " ] ;  então
+	Claro
+	echo  $ GREEN  " [!] Instalando o ngrok aguarde ... " $ NC
+	dormir 3
+	if [ -e  " $ HOME /ps.ngrok " ] ;  então
+		Claro
+		echo  $ YELLOW " A ferramenta já esta instalado no termux, caso queira reinstalar, exclua a pasta do bot com (rm -r -f ps.ngrok) e tente novamente "
+		saída
+	fi
+	CD
+	git clone https://github.com/PSecurity/ps.ngrok > / dev / null 2> / dev / null
+	cd ps.ngrok
+	chmod 777 ngrok 
+	Claro
+	echo  $ GREEN  " [!] FERRAMENTA INSTALADA COM SUCESSO, AGORA E SO IR NA MASSA E USAR SUA KEY DE ATIVAÇÃO "
+	echo  $ GREEN  " [!] SIGA OS COMANDOS ABAIXO: "
+	eco
+	echo  $ YELLOW  " cd && cd ps.ngrok && ./ngrok authtoken (chave sua) " $ NC
+
+fi
+
+if [ $ opts  =  " 9 " ] ;  então
+	Claro
+	echo  $ GREEN  " [!] Instalando a ferramenta aguarde ... " $ NC
+	dormir 3
+	if [ -e  " $ HOME / seeker " ] ;  então
+		Claro
+		echo  $ YELLOW " A ferramenta já esta instalado no termux, caso queira reinstalar, exclua a pasta do bot com (rm -r -f seeker) e tente novamente "
+		saída
+	fi
+	CD
+	pkg install python php openssh python2 > / dev / null 2> / dev / null
+	git clone https://github.com/thewhiteh4t/seeker > / dev / null 2> / dev / null
+	buscador de cd
+	Claro
+	echo  $ GREEN  " [!] FERRAMENTA INSTALADA COM SUCESSO, ABRA OUTRA SESSÃO E INICIE O NGROK "
+	echo  $ GREEN  " [!] SIGA OS COMANDOS ABAIXO: "
+	eco
+	echo  $ YELLOW  " cd && cd ps.ngrok && ./ngrok http 8080 " $ NC
+
+fi
+
+if [ $ opts  =  " 10 " ] ;  então
+	echo  $ RED  " FECHANDO ... "
+	dormir 3
+	saída
+fi
+© 2021 GitHub, Inc.
+Termos
+Privacidade
+Segurança
+Status
+Docs
+Entre em contato com o GitHub
+Preços
+API
+Treinamento
+Blog
+.
